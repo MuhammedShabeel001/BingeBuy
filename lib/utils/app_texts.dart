@@ -7,4 +7,5 @@ class AppTexts {
 
   //other texts
   static String location = 'ABCD, New Delhi';
+  static String search = 'Search for products/stores';
 }

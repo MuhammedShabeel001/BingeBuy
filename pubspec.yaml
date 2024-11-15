@@ -32,6 +32,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_svg: ^2.0.14
+  gap: ^3.0.1
   provider: ^6.1.2
 
 dev_dependencies:
@@ -75,7 +76,6 @@ flutter:
           weight: 600
         - asset: assets/fonts/Quicksand-Bold.ttf
           weight: 700
-
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:

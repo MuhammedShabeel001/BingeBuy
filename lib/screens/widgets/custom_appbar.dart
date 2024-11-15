@@ -1,4 +1,5 @@
 import 'package:bingebuy/utils/app_assets.dart';
+import 'package:bingebuy/utils/app_colors.dart';
 import 'package:bingebuy/utils/app_texts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -11,6 +12,7 @@ class CustomAppbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      backgroundColor: AppColors.primary,
       title: Row(
         children: [
           Padding(  
