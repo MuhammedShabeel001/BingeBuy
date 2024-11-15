@@ -16,6 +16,8 @@ class AppColors {
 
   static const Color button = Color.fromRGBO(255, 137, 24, 1);
   static const Color searchbar = Color.fromRGBO(238, 238, 238, 1); 
+  static const Color offerCard = Color.fromRGBO(156, 55, 236, 1); 
+  static const Color shadow = Color.fromRGBO(50, 50, 50, 0.150); 
 
   static const Color alert = Color.fromRGBO(255, 137, 24, 1);
   static const Color success = Color(0xFF10B981);

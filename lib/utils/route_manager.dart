@@ -8,9 +8,9 @@ class RouteManager {
   static Route<dynamic>? generateRoute(RouteSettings settings){
     switch(settings.name){
       case AppRoutes.home:
-        return CupertinoPageRoute(builder: (_) => HomePage(),);
+        return CupertinoPageRoute(builder: (_) => const HomePage(),);
       case AppRoutes.notification:
-        return CupertinoPageRoute(builder: (_) => NotificationPage());
+        return CupertinoPageRoute(builder: (_) => const NotificationPage());
 
       default:
         return _errorRoute();

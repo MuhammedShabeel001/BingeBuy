@@ -21,11 +21,16 @@ class HomePage extends StatelessWidget {
           children: [
             const TopBar(),
             const Gap(20),
-            const TodayTab(),
+            TodayTab(),
             const Gap(20),
             Container(
               color: Colors.lightBlueAccent,
               height: 270,
+              child: const Center(
+                child: SizedBox(
+                  // child: CategoryCard(category: category),
+                ),
+              ),
             ),
             const Gap(20),
             Container(
