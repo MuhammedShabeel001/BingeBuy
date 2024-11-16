@@ -22,7 +22,9 @@ class AppAssets {
   static String stores = 'assets/icons/stores.svg';
 
   static String discount = 'assets/icons/discount.svg';
+  static String star = 'assets/icons/star.svg';
 
   //images
   static String fruites = 'assets/images/fruites.png';
+  static String iceCream = 'assets/images/ice_cream.png';
 }

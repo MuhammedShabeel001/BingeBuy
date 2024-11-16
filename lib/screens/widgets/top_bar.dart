@@ -11,53 +11,56 @@ class TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 70,
-      child: Row(
-        children: [
-          Flexible(
-            flex: 6,
-            child: TextField(
-              cursorColor: AppColors.accent,
-              decoration: InputDecoration(
-                filled: true,
-                fillColor: AppColors.searchbar,
-                hintText: AppTexts.search,
-                hintStyle: const TextStyle(fontSize: 20, color: Colors.grey),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(8),
-                  borderSide: BorderSide.none,
-                ),
-                suffixIcon: Padding(
-                  padding: const EdgeInsets.all(10),
-                  child: SvgPicture.asset(
-                    AppAssets.search,
-                    fit: BoxFit.contain,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: SizedBox(
+        height: 70,
+        child: Row(
+          children: [
+            Flexible(
+              flex: 6,
+              child: TextField(
+                cursorColor: AppColors.accent,
+                decoration: InputDecoration(
+                  filled: true,
+                  fillColor: AppColors.searchbar,
+                  hintText: AppTexts.search,
+                  hintStyle: const TextStyle(fontSize: 20, color: Colors.grey),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8),
+                    borderSide: BorderSide.none,
+                  ),
+                  suffixIcon: Padding(
+                    padding: const EdgeInsets.all(10),
+                    child: SvgPicture.asset(
+                      AppAssets.search,
+                      fit: BoxFit.contain,
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
-          Flexible(
-            flex: 1,
-            child: Center(
-              child: GestureDetector(
-                onTap: () => Navigator.pushNamed(context, '/notifications'),
-                child: SvgPicture.asset(
-                  AppAssets.notification,
+            Flexible(
+              flex: 1,
+              child: Center(
+                child: GestureDetector(
+                  onTap: () => Navigator.pushNamed(context, '/notifications'),
+                  child: SvgPicture.asset(
+                    AppAssets.notification,
+                  ),
                 ),
               ),
             ),
-          ),
-          Flexible(
-            flex: 1,
-            child: Center(
-              child: SvgPicture.asset(
-                AppAssets.tag,
+            Flexible(
+              flex: 1,
+              child: Center(
+                child: SvgPicture.asset(
+                  AppAssets.tag,
+                ),
               ),
-            ),
-          )
-        ],
+            )
+          ],
+        ),
       ),
     );
   }

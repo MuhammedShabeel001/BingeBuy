@@ -24,9 +24,16 @@ class AppTexts {
   static String topPics = 'Top picks for you';
   static String checkButton = 'CHECK NOW';
 
+  static String trending = 'Trending'; 
+  static String title = 'Mithas Bhandar'; 
+  static String subtitle = 'Sweets, North Indian'; 
+  static String kilometer = '(store location) | 6.4kms'; 
+  static String time = '4.1  |  45 mins'; 
 
   //common texts
   static String more = 'More';
+  static String seeAll = 'See all';
+
 
 
 

@@ -13,33 +13,34 @@ class TopPicks extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       // color: Colors.lightBlueAccent,
       height: 270,
       child:Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-           Expanded(
-              flex: 1,
-              child: Text(
-                AppTexts.topPics,
-                style:
-                    const TextStyle(fontWeight: FontWeight.w700, fontSize: 28),
-              )),
+           Padding(
+             padding: const EdgeInsets.only(left: 20,bottom: 10),
+             child: Expanded(
+                flex: 1,
+                child: Text(
+                  AppTexts.topPics,
+                  style:
+                      const TextStyle(fontWeight: FontWeight.w700, fontSize: 28),
+                )),
+           ),
           Expanded(
             flex: 5,
-            child: Container(
-              child: ListView(
-                scrollDirection: Axis.horizontal,
-                children: [
-                  TopCard(cardColor: AppColors.accent),
-                  Gap(20),
-                  TopCard(cardColor: AppColors.offerCard)
-                ],
-              ),
-              // color: Colors.green,
-
-              ),),
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+                const Gap(20),
+                TopCard(cardColor: AppColors.accent),
+                const Gap(20),
+                TopCard(cardColor: AppColors.offerCard),
+                const Gap(20),
+              ],
+            ),),
         ],
       )
     );
