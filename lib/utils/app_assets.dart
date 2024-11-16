@@ -21,5 +21,8 @@ class AppAssets {
   static String stationery = 'assets/icons/stationery.svg';
   static String stores = 'assets/icons/stores.svg';
 
+  static String discount = 'assets/icons/discount.svg';
+
   //images
+  static String fruites = 'assets/images/fruites.png';
 }

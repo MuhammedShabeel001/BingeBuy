@@ -48,6 +48,7 @@ class TodayTab extends StatelessWidget {
           Expanded(
               flex: 6,
               child: GridView.builder(
+                physics:const NeverScrollableScrollPhysics(),
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 4,
                   childAspectRatio: 0.8,

@@ -41,8 +41,11 @@ class TopBar extends StatelessWidget {
           Flexible(
             flex: 1,
             child: Center(
-              child: SvgPicture.asset(
-                AppAssets.notification,
+              child: GestureDetector(
+                onTap: () => Navigator.pushNamed(context, '/notifications'),
+                child: SvgPicture.asset(
+                  AppAssets.notification,
+                ),
               ),
             ),
           ),

@@ -14,6 +14,8 @@ class CategoryCard extends StatelessWidget {
         Stack(
           children: [
             Container(
+              height: 80,
+              width: 80,
               decoration: BoxDecoration(
                 color: AppColors.primary,
                 borderRadius: BorderRadius.circular(5),
@@ -26,7 +28,7 @@ class CategoryCard extends StatelessWidget {
                 ],
               ),
               child: Padding(
-                padding: const EdgeInsets.all(22),
+                padding: const EdgeInsets.all(20),
                 child: SvgPicture.asset(
                   category.iconPath,
                   height: 40,

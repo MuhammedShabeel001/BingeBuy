@@ -21,8 +21,13 @@ class AppTexts {
   static String stationery = 'Stationery';
   static String stores = 'Stores';
 
+  static String topPics = 'Top picks for you';
+  static String checkButton = 'CHECK NOW';
+
+
   //common texts
   static String more = 'More';
+
 
 
 }

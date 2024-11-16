@@ -2,6 +2,7 @@ import 'package:bingebuy/screens/widgets/custom_appbar.dart';
 import 'package:bingebuy/screens/widgets/custom_navbar.dart';
 import 'package:bingebuy/screens/widgets/today_tab.dart';
 import 'package:bingebuy/screens/widgets/top_bar.dart';
+import 'package:bingebuy/screens/widgets/top_picks.dart';
 import 'package:bingebuy/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -22,16 +23,7 @@ class HomePage extends StatelessWidget {
             const TopBar(),
             const Gap(20),
             TodayTab(),
-            const Gap(20),
-            Container(
-              color: Colors.lightBlueAccent,
-              height: 270,
-              child: const Center(
-                child: SizedBox(
-                  // child: CategoryCard(category: category),
-                ),
-              ),
-            ),
+            TopPicks(),
             const Gap(20),
             Container(
               color: Colors.orangeAccent,
@@ -65,4 +57,5 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
 
