@@ -27,8 +27,11 @@ class AppTexts {
   static String trending = 'Trending'; 
   static String title = 'Mithas Bhandar'; 
   static String subtitle = 'Sweets, North Indian'; 
-  static String kilometer = '(store location) | 6.4kms'; 
+  static String kilometer = '(store location) | 6.4kms';  
   static String time = '4.1  |  45 mins'; 
+  
+  static String crazeDeals = 'Craze deals'; 
+  static String explore = 'Explore'; 
 
   //common texts
   static String more = 'More';

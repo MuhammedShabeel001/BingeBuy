@@ -1,12 +1,10 @@
-
-import 'package:bingebuy/screens/widgets/top_card.dart';
-import 'package:bingebuy/utils/app_colors.dart';
+import 'package:bingebuy/screens/widgets/craze_card.dart';
 import 'package:bingebuy/utils/app_texts.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-class TopPicks extends StatelessWidget {
-  const TopPicks({
+class CrazeDeals extends StatelessWidget {
+  const CrazeDeals({
     super.key,
   });
 
@@ -14,7 +12,7 @@ class TopPicks extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       // color: Colors.lightBlueAccent,
-      height: 270,
+      height: 200,
       child:Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -23,7 +21,7 @@ class TopPicks extends StatelessWidget {
              child: Expanded(
                 flex: 1,
                 child: Text(
-                  AppTexts.topPics,
+                  AppTexts.crazeDeals,
                   style:
                       const TextStyle(fontWeight: FontWeight.w700, fontSize: 28),
                 )),
@@ -34,9 +32,11 @@ class TopPicks extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               children: [
                 const Gap(20),
-                TopCard(cardColor: AppColors.accent),
+                CrazeCard(),
+                // TopCard(cardColor: AppColors.accent),
                 const Gap(20),
-                TopCard(cardColor: AppColors.offerCard),
+                CrazeCard(),
+                // TopCard(cardColor: AppColors.offerCard),
                 const Gap(20),
               ],
             ),),
@@ -45,4 +45,3 @@ class TopPicks extends StatelessWidget {
     );
   }
 }
-

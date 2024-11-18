@@ -27,9 +27,9 @@ class TopCard extends StatelessWidget {
             // top: 0,
             left: 30,
             bottom: 85,
-            child: Container(
-              child: SvgPicture.asset(AppAssets.discount),
+            child: SizedBox(
               width: 130, height: 90,
+              child: SvgPicture.asset(AppAssets.discount),
               //color: Colors.red
             ),
           ),
@@ -37,33 +37,33 @@ class TopCard extends StatelessWidget {
             // top: 50,
             bottom: 30,
             left: 30,
-            child: Container(
+            child: SizedBox(
+              width: 160, height: 40,
               child: TextButton(
                   onPressed: () {},
                   style: TextButton.styleFrom(
                     foregroundColor: AppColors.textLight,
                     backgroundColor: AppColors.alert, // Text color
                     minimumSize:
-                        Size(160, 40), // Width and height of the button
+                        const Size(160, 40), // Width and height of the button
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                           5), // Match the rounded corners if needed
                     ),
                   ),
-                  child: Text(AppTexts.cart, style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),)),
-              width: 160, height: 40,
+                  child: Text(AppTexts.checkButton, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),)),
               //color: Colors.green
             ),
           ),
           Positioned(
             bottom: 0,
             right: 0,
-            child: Container(
+            child: SizedBox(
+              width: 250, height: 220,
               child: Image.asset(
                 AppAssets.fruites,
                 fit: BoxFit.cover,
               ),
-              width: 250, height: 220,
               //color: Colors.blue
             ),
           ),

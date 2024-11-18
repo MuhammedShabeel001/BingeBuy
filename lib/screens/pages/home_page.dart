@@ -8,6 +8,8 @@ import 'package:bingebuy/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import '../widgets/craze_deals.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -26,10 +28,7 @@ class HomePage extends StatelessWidget {
           const Gap(20),
           const Trending(),
           const Gap(20),
-          Container(
-            color: Colors.greenAccent,
-            height: 200,
-          ),
+          const CrazeDeals(),
           const Gap(20),
           Container(
             color: Colors.redAccent,
@@ -52,7 +51,3 @@ class HomePage extends StatelessWidget {
     );
   }
 }
-
-
-
-
