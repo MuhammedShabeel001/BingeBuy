@@ -27,8 +27,15 @@ class AppAssets {
   static String rightArrow = 'assets/icons/right_arrow.svg';
   static String topText = 'assets/icons/top_text.svg';
 
+  static String nextIcon = 'assets/icons/next_round.svg';
+  static String giftIcon = 'assets/icons/gift.svg';
+
+  static String discountIcon = 'assets/icons/discount_icon.svg';
+  static String groceryIcon = 'assets/icons/grocery_icon.svg';
+
   //images
   static String fruites = 'assets/images/fruites.png';
   static String iceCream = 'assets/images/ice_cream.png';
   static String flowerBase = 'assets/images/flower_base.png';
+  static String foodImage = 'assets/images/food.png';
 }

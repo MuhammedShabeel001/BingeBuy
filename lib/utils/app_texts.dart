@@ -33,8 +33,21 @@ class AppTexts {
   static String crazeDeals = 'Craze deals'; 
   static String explore = 'Explore'; 
 
+  static String referText = 'Refer & Earn'; 
+  static String invitetext = 'Invite your friends & earn 15% off';  
+
+  static String nearbyTitle = 'Nearby stores'; 
+  static String mainTitle = 'Freshly Baker'; 
+  static String locationTitle = 'Sweets,North Indian'; 
+  static String kmTitle = 'Site No - 1  |  6.4 kms'; 
+  static String topStore = 'Top Store'; 
+  static String uptoOffer = 'Upto 10% OFF'; 
+  static String items = '3400+ items available'; 
+  static String rating = '4.1'; 
+  static String times = '45 mins'; 
+
   //common texts
-  static String more = 'More';
+  static String more = 'More'; 
   static String seeAll = 'See all';
 
 

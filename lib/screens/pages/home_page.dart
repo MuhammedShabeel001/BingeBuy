@@ -9,6 +9,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../widgets/craze_deals.dart';
+import '../widgets/earn_and_refer.dart';
+import '../widgets/near_by.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -30,15 +32,9 @@ class HomePage extends StatelessWidget {
           const Gap(20),
           const CrazeDeals(),
           const Gap(20),
-          Container(
-            color: Colors.redAccent,
-            height: 90,
-          ),
+          EarnAndRefer(),
           const Gap(20),
-          Container(
-            color: Colors.yellow,
-            height: 320,
-          ),
+          NearBy(),
           const Gap(20),
           Container(
             color: Colors.redAccent,
@@ -51,3 +47,6 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
+
+
