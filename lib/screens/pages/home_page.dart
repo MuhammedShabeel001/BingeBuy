@@ -11,6 +11,7 @@ import 'package:gap/gap.dart';
 import '../widgets/craze_deals.dart';
 import '../widgets/earn_and_refer.dart';
 import '../widgets/near_by.dart';
+import '../widgets/view_all_button.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -36,10 +37,7 @@ class HomePage extends StatelessWidget {
           const Gap(20),
           NearBy(),
           const Gap(20),
-          Container(
-            color: Colors.redAccent,
-            height: 160,
-          ),
+          ViewAll(),
           const Gap(20),
         ],
       ),
@@ -47,6 +45,5 @@ class HomePage extends StatelessWidget {
     );
   }
 }
-
 
 

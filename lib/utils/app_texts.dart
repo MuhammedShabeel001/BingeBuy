@@ -14,7 +14,7 @@ class AppTexts {
   static String todayCard = 'What would you like to do today?';
   static String food = 'Food Delivery';
   static String medicine = 'Medicines';
-  static String pet = 'Pet Supplies';
+  static String pet = 'Pet \n Supplies';
   static String gift = 'Gifts';
   static String meat= 'Meat';
   static String cosmetics = 'Cosmetic';
@@ -49,8 +49,6 @@ class AppTexts {
   //common texts
   static String more = 'More'; 
   static String seeAll = 'See all';
-
-
-
+  static String viewAll = 'View all stores';
 
 }
