@@ -11,7 +11,7 @@ class NearBy extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 240, // Adjust height as needed
+      height: 330, // Adjust height as needed
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -46,14 +46,14 @@ class NearBy extends StatelessWidget {
           Expanded(
             child: Flexible(
               child: ListView(
+                physics: NeverScrollableScrollPhysics(),
                 scrollDirection: Axis.vertical,
                 padding: const EdgeInsets.only(left: 20, right: 20),
                 children: [
                   FreshlyBakerCard(),
                   const Gap(20),
                    FreshlyBakerCard(),
-                  const Gap(20),
-                   FreshlyBakerCard(),
+
                 ],
               ),
             ),

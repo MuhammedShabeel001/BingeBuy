@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class AppTexts {
   //app pages
   static String home = 'Home';
@@ -50,5 +52,10 @@ class AppTexts {
   static String more = 'More'; 
   static String seeAll = 'See all';
   static String viewAll = 'View all stores';
+
+
+  //text styles
+  static TextStyle hintStyle = const TextStyle(fontSize: 20, color: Colors.grey); 
+
 
 }

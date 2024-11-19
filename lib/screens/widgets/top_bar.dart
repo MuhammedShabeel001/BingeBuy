@@ -25,7 +25,7 @@ class TopBar extends StatelessWidget {
                   filled: true,
                   fillColor: AppColors.searchbar,
                   hintText: AppTexts.search,
-                  hintStyle: const TextStyle(fontSize: 20, color: Colors.grey),
+                  hintStyle: AppTexts.hintStyle,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide.none,

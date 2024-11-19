@@ -1,156 +1,106 @@
+import 'package:bingebuy/utils/app_assets.dart';
+import 'package:bingebuy/utils/app_colors.dart';
+import 'package:bingebuy/utils/app_texts.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:gap/gap.dart';
 
 class FreshlyBakerCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Card(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      elevation: 3,
-      child: Padding(
-        padding: const EdgeInsets.all(10.0),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // Image Section
-            ClipRRect(
-              borderRadius: BorderRadius.circular(8),
-              child: Image.network(
-                'https://via.placeholder.com/80', // Replace with the actual image URL
-                width: 80,
-                height: 80,
-                fit: BoxFit.cover,
-              ),
-            ),
-            const SizedBox(width: 10),
-            // Details Section
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  // Title
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'Freshly Baker',
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black87,
-                        ),
-                      ),
-                      Row(
-                        children: [
-                          Icon(
-                            Icons.star,
-                            size: 16,
-                            color: Colors.amber,
-                          ),
-                          const SizedBox(width: 2),
-                          Text(
-                            '4.1',
-                            style: TextStyle(
-                              fontSize: 14,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.black87,
+    return Expanded(
+        child: Container(
+      // color: Colors.yellow,
+      height: 140,
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          ClipRRect(
+            child: Image.asset(AppAssets.foodImage),
+          ),
+          Gap(20),
+          Expanded(
+              child: Container(
+            // color: Colors.orange,
+            child: Column(
+              children: [
+                Expanded(
+                  flex: 4,
+                  child: Container(
+                    // color: Colors.red,
+                    child: Row(
+                      children: [
+                        Expanded(
+                          flex: 4,
+                          child: Container(
+                            // color: Colors.pink,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              // mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Text(AppTexts.mainTitle, style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w700),),
+                                Text(AppTexts.locationTitle, style: const TextStyle(fontSize: 18),),
+                                Text(AppTexts.kmTitle,style: const TextStyle(fontSize: 16)),
+                                Gap(10),
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: AppColors.searchbar,
+                                    borderRadius: BorderRadius.circular(4)
+                                  ),
+                                  height: 16,width: 48,child: Center(child: Text(AppTexts.topStore,style: const TextStyle(fontSize: 8),)),)
+                              ],
                             ),
                           ),
-                        ],
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 4),
-                  // Subcategories
-                  Text(
-                    'Sweets, North Indian',
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.grey[700],
-                    ),
-                  ),
-                  const SizedBox(height: 4),
-                  // Location & Distance
-                  Text(
-                    'Site No - 1  |  6.4 kms',
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.grey[500],
-                    ),
-                  ),
-                  const SizedBox(height: 8),
-                  // Tags and Time
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      // Top Store Tag
-                      Container(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 6, vertical: 2),
-                        decoration: BoxDecoration(
-                          color: Colors.blue[50],
-                          borderRadius: BorderRadius.circular(4),
                         ),
-                        child: Text(
-                          'Top Store',
-                          style: TextStyle(
-                            fontSize: 10,
-                            color: Colors.blue,
-                            fontWeight: FontWeight.w500,
+                        Flexible(
+                          child: Container(
+                            // color: Colors.yellow,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    SvgPicture.asset(AppAssets.star),
+                                    Gap(5),
+                                    Text(AppTexts.rating,style: const TextStyle(fontWeight: FontWeight.w600,fontSize: 18),),
+                                  ],
+                                ),
+                                Text(AppTexts.times,style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600,color: AppColors.button),),
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                      // Delivery Time
-                      Text(
-                        '45 mins',
-                        style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.orange,
-                        ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                  const SizedBox(height: 8),
-                  // Discounts & Items Available
-                  Row(
-                    children: [
-                      // Discount
-                      Icon(
-                        Icons.local_offer,
-                        size: 14,
-                        color: Colors.red,
-                      ),
-                      const SizedBox(width: 4),
-                      Text(
-                        'Upto 10% OFF',
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: Colors.grey[700],
-                        ),
-                      ),
-                      const SizedBox(width: 16),
-                      // Items Available
-                      Icon(
-                        Icons.grass,
-                        size: 14,
-                        color: Colors.green,
-                      ),
-                      const SizedBox(width: 4),
-                      Text(
-                        '3400+ items available',
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: Colors.grey[700],
-                        ),
-                      ),
-                    ],
+                ),
+                Gap(8),
+                Divider(
+                  height: 2,
+                ),
+                Gap(8),
+                Flexible(
+                  child: Container(
+                    // color: Colors.green,
+                    child: Row(
+                      children: [
+                        SvgPicture.asset(AppAssets.discountIcon),
+                        Gap(10),
+                        Text(AppTexts.uptoOffer, style: TextStyle(fontWeight: FontWeight.w600,),),
+                        Gap(20),
+                        SvgPicture.asset(AppAssets.groceryIcon),
+                        Gap(10),
+                        Text(AppTexts.items, style: const TextStyle(fontWeight: FontWeight.w600),),
+                      ],
+                    ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
-          ],
-        ),
+          ))
+        ],
       ),
-    );
+    ));
   }
 }
