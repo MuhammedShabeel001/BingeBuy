@@ -30,14 +30,14 @@ class CrazeDeals extends StatelessWidget {
             flex: 5,
             child: ListView(
               scrollDirection: Axis.horizontal,
-              children: [
-                const Gap(20),
+              children: const [
+                Gap(20),
                 CrazeCard(),
                 // TopCard(cardColor: AppColors.accent),
-                const Gap(20),
+                Gap(20),
                 CrazeCard(),
                 // TopCard(cardColor: AppColors.offerCard),
-                const Gap(20),
+                Gap(20),
               ],
             ),),
         ],

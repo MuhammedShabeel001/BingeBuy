@@ -1,5 +1,4 @@
 import 'package:bingebuy/screens/widgets/trending_card.dart';
-import 'package:bingebuy/utils/app_assets.dart';
 import 'package:flutter/material.dart';
 
 class TrendingItem extends StatelessWidget {

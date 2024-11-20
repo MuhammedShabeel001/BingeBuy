@@ -11,7 +11,7 @@ class ViewAll extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       // color: Colors.redAccent,
       height: 80,
       child: Center(

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class AppTexts {
   //app pages
   static String home = 'Home';
+  static String notification = 'Notifications';  
   static String cart = 'Cart';
   static String myOrder = 'My Order';
   static String account = 'Account';

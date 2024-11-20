@@ -24,7 +24,7 @@ class EarnAndRefer extends StatelessWidget {
             Positioned(
               left: 35,
               top: 18,
-              child: Container(
+              child: SizedBox(
                 // color: Colors.red,
                 width: 130,
                 height: 25,
@@ -40,7 +40,7 @@ class EarnAndRefer extends StatelessWidget {
             Positioned(
               left: 15,
               bottom: 25,
-              child: Container(
+              child: SizedBox(
                 // color: Colors.yellow,
                 width: 257,
                 height: 18,
@@ -62,7 +62,7 @@ class EarnAndRefer extends StatelessWidget {
             Positioned(
               right: 30,
               bottom: 10,
-              child: Container(
+              child: SizedBox(
                 // color: Colors.pink,
                 width: 85,
                 height: 82,

@@ -33,6 +33,9 @@ class AppAssets {
   static String discountIcon = 'assets/icons/discount_icon.svg';
   static String groceryIcon = 'assets/icons/grocery_icon.svg';
 
+  static String back = 'assets/icons/back.svg'; 
+  static String icon = 'assets/icons/notificationIcon.svg'; 
+
   //images
   static String fruites = 'assets/images/fruites.png';
   static String iceCream = 'assets/images/ice_cream.png';

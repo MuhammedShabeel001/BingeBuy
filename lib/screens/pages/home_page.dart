@@ -20,8 +20,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.primary,
-      appBar: const PreferredSize(
-          preferredSize: Size.fromHeight(70), child: CustomAppbar()),
+      appBar: const CustomAppBar(),
       body: ListView(
         children: [
           const TopBar(),
@@ -33,11 +32,11 @@ class HomePage extends StatelessWidget {
           const Gap(20),
           const CrazeDeals(),
           const Gap(20),
-          EarnAndRefer(),
+          const EarnAndRefer(),
           const Gap(20),
-          NearBy(),
+          const NearBy(),
           const Gap(20),
-          ViewAll(),
+          const ViewAll(),
           const Gap(20),
         ],
       ),
@@ -45,5 +44,3 @@ class HomePage extends StatelessWidget {
     );
   }
 }
-
-

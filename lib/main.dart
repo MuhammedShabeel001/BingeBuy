@@ -1,17 +1,19 @@
+import 'package:bingebuy/providers/notification_provider.dart';
 import 'package:bingebuy/utils/app_routes.dart';
 import 'package:bingebuy/utils/route_manager.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(
-    // MultiProvider(
-    //   providers: [
-    //     // ChangeNotifierProvider(create: (context) => ,)
-    //   ],
-    //   child:
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => NotificationProvider()..fetchNotifications(),)
+      ],
+      child:
        const MyApp(),
-    // ),
+    ),
   );
 }
 

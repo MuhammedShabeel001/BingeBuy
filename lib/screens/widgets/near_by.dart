@@ -46,12 +46,12 @@ class NearBy extends StatelessWidget {
           Expanded(
             child: Flexible(
               child: ListView(
-                physics: NeverScrollableScrollPhysics(),
+                physics: const NeverScrollableScrollPhysics(),
                 scrollDirection: Axis.vertical,
                 padding: const EdgeInsets.only(left: 20, right: 20),
-                children: [
+                children: const [
                   FreshlyBakerCard(),
-                  const Gap(20),
+                  Gap(20),
                    FreshlyBakerCard(),
 
                 ],

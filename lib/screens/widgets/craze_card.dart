@@ -6,7 +6,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
 
 class CrazeCard extends StatelessWidget {
-  CrazeCard({
+  const CrazeCard({
     super.key,
   });
 
