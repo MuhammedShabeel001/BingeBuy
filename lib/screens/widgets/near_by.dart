@@ -11,25 +11,22 @@ class NearBy extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 330, // Adjust height as needed
+      height: 330,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Title Section
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                // Nearby Title
                 Text(
                   AppTexts.nearbyTitle,
                   style: const TextStyle(
                     fontWeight: FontWeight.w700,
-                    fontSize: 24, // Adjust font size for better design
+                    fontSize: 24,
                   ),
                 ),
-                // "See All" Button
                 Text(
                   AppTexts.seeAll,
                   style: const TextStyle(
@@ -41,8 +38,7 @@ class NearBy extends StatelessWidget {
               ],
             ),
           ),
-          const Gap(10), // Spacing between title and list
-          // Horizontal ListView Section
+          const Gap(10),
           Expanded(
             child: Flexible(
               child: ListView(
@@ -52,8 +48,7 @@ class NearBy extends StatelessWidget {
                 children: const [
                   FreshlyBakerCard(),
                   Gap(20),
-                   FreshlyBakerCard(),
-
+                  FreshlyBakerCard(),
                 ],
               ),
             ),

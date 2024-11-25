@@ -13,6 +13,8 @@ import '../widgets/earn_and_refer.dart';
 import '../widgets/near_by.dart';
 import '../widgets/view_all_button.dart';
 
+//main home page
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 

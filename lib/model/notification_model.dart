@@ -1,3 +1,6 @@
+
+//notification model
+
 class NotificationModel {
   final String image;
   final String title;

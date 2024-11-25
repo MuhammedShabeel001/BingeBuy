@@ -17,12 +17,11 @@ class CustomNavbar extends StatelessWidget {
         height: 74,
         child: BottomNavigationBar(
           backgroundColor: AppColors.primary,
-           type: BottomNavigationBarType.fixed,
-          // onTap: ,
-          items:  <BottomNavigationBarItem>[
+          type: BottomNavigationBarType.fixed,
+          items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: SvgPicture.asset(AppAssets.home),
-              label: AppTexts.home ,
+              label: AppTexts.home,
             ),
             BottomNavigationBarItem(
               icon: SvgPicture.asset(AppAssets.cart),

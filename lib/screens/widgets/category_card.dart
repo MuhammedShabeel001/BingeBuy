@@ -7,6 +7,8 @@ class CategoryCard extends StatelessWidget {
 
   const CategoryCard({super.key, required this.category});
 
+  
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -41,7 +43,8 @@ class CategoryCard extends StatelessWidget {
                 top: 0,
                 right: 0,
                 child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                   decoration: BoxDecoration(
                     color: AppColors.offerCard,
                     borderRadius: BorderRadius.circular(5),

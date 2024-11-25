@@ -1,4 +1,4 @@
-
+import 'package:bingebuy/utils/app_text_style.dart';
 import 'package:flutter/material.dart';
 
 import '../../utils/app_colors.dart';
@@ -12,28 +12,27 @@ class ViewAll extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      // color: Colors.redAccent,
       height: 80,
       child: Center(
-        child:  SizedBox(
-              width: 240, height: 40,
-              child: TextButton(
-                  onPressed: () {},
-                  style: TextButton.styleFrom(
-                    foregroundColor: AppColors.textLight,
-                    backgroundColor: AppColors.accent, // Text color
-                    minimumSize:
-                        const Size(240, 40), //  Width and height of the button
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(
-                          10), // Match the rounded corners if needed
-                    ),
-                  ),
-                  child: Text(AppTexts.viewAll, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),)),
-              //color: Colors.green
-            ), 
+        child: SizedBox(
+          width: 240,
+          height: 40,
+          child: TextButton(
+              onPressed: () {},
+              style: TextButton.styleFrom(
+                foregroundColor: AppColors.textLight,
+                backgroundColor: AppColors.accent,
+                minimumSize: const Size(240, 40),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+              child: Text(
+                AppTexts.viewAll,
+                style: AppTextStyle.buttonText,
+              )),
+        ),
       ),
     );
   }
 }
-

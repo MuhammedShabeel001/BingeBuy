@@ -1,7 +1,10 @@
 import 'package:bingebuy/utils/app_assets.dart';
 import 'package:bingebuy/utils/app_colors.dart';
+import 'package:bingebuy/utils/app_text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+
+//notification page appbar
 
 class BBAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
@@ -25,9 +28,9 @@ class BBAppBar extends StatelessWidget implements PreferredSizeWidget {
       ),
       title: Text(
         title,
-        style: const TextStyle(fontWeight: FontWeight.w700),
+        style: AppTextStyle.apphead,
       ),
-      elevation: 2, // Add drop shadow
+      elevation: 2,
       shadowColor: AppColors.background,
       backgroundColor: AppColors.primary,
       surfaceTintColor: AppColors.primary,

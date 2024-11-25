@@ -4,11 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../providers/notification_provider.dart';
-// import 'package:grocery_app/controller/notification_provider.dart';
-// import 'package:grocery_app/utils/image_path.dart';
-// import 'package:grocery_app/view/notification_screen.dart/widget/build_subtitle.dart';
-
-// import '../../../utils/app_text_style.dart';
 
 ListView bulilListview(NotificationProvider provider) {
   return ListView.separated(
@@ -23,7 +18,10 @@ ListView bulilListview(NotificationProvider provider) {
             SvgPicture.asset(AppAssets.icon),
           ],
         ),
-        title: Text(notification.title,style: const TextStyle(fontSize: 20,fontWeight: FontWeight.w700),),
+        title: Text(
+          notification.title,
+          style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
+        ),
         subtitle: buildSubTitle(notification),
       );
     },

@@ -15,24 +15,38 @@ class TrendingCard extends StatelessWidget {
       children: [
         SizedBox(
           width: 100,
-          // color: Colors.orange,
           child: Image.asset(AppAssets.iceCream),
         ),
         Flexible(
           child: ListTile(
-            title: Text(AppTexts.title,style: const TextStyle(fontSize: 23, fontWeight: FontWeight.bold),),
+            title: Text(
+              AppTexts.title,
+              style: const TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
+            ),
             subtitle: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(AppTexts.subtitle, style:  const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),),
-                Text(AppTexts.kilometer,style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),),
+                Text(
+                  AppTexts.subtitle,
+                  style: const TextStyle(
+                      fontSize: 16, fontWeight: FontWeight.w500),
+                ),
+                Text(
+                  AppTexts.kilometer,
+                  style: const TextStyle(
+                      fontSize: 16, fontWeight: FontWeight.w500),
+                ),
                 Row(
                   children: [
                     SvgPicture.asset(AppAssets.star),
                     const Gap(10),
-                    Text(AppTexts.time,style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),),
+                    Text(
+                      AppTexts.time,
+                      style: const TextStyle(
+                          fontSize: 16, fontWeight: FontWeight.w500),
+                    ),
                   ],
-                ), 
+                ),
               ],
             ),
           ),

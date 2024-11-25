@@ -1,7 +1,5 @@
 import 'dart:convert';
 import 'dart:isolate';
-
-// import 'package:grocery_app/model/notfication_model.dart';
 import 'package:http/http.dart' as http;
 
 import '../model/notification_model.dart';
@@ -12,6 +10,8 @@ Future<List<NotificationModel>> fetchNotificationsInIsolate() async {
 
   return await receivePort.first as List<NotificationModel>;
 }
+
+//fetch data from api
 
 Future<void> _fetchData(SendPort sendPort) async {
   final response = await http.get(

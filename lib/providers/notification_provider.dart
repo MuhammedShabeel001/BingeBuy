@@ -1,8 +1,5 @@
-
 import 'package:bingebuy/services/api_service.dart';
 import 'package:flutter/foundation.dart';
-// import 'package:grocery_app/controller/isoates.dart';
-// import 'package:grocery_app/model/notfication_model.dart';
 
 import '../model/notification_model.dart';
 
@@ -10,6 +7,8 @@ class NotificationProvider with ChangeNotifier {
   List<NotificationModel> _notifications = [];
 
   List<NotificationModel> get notifications => _notifications;
+
+  //fn to fetch the notification from api
 
   Future<void> fetchNotifications() async {
     try {

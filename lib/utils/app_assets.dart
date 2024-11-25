@@ -1,5 +1,4 @@
 class AppAssets {
-
   //icons
   static String home = 'assets/icons/home.svg';
   static String cart = 'assets/icons/cart.svg';
@@ -23,7 +22,7 @@ class AppAssets {
 
   static String discount = 'assets/icons/discount.svg';
   static String star = 'assets/icons/star.svg';
-  
+
   static String rightArrow = 'assets/icons/right_arrow.svg';
   static String topText = 'assets/icons/top_text.svg';
 
@@ -33,8 +32,8 @@ class AppAssets {
   static String discountIcon = 'assets/icons/discount_icon.svg';
   static String groceryIcon = 'assets/icons/grocery_icon.svg';
 
-  static String back = 'assets/icons/back.svg'; 
-  static String icon = 'assets/icons/notificationIcon.svg'; 
+  static String back = 'assets/icons/back.svg';
+  static String icon = 'assets/icons/notificationIcon.svg';
 
   //images
   static String fruites = 'assets/images/fruites.png';

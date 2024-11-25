@@ -25,7 +25,6 @@ class EarnAndRefer extends StatelessWidget {
               left: 35,
               top: 18,
               child: SizedBox(
-                // color: Colors.red,
                 width: 130,
                 height: 25,
                 child: Text(
@@ -41,7 +40,6 @@ class EarnAndRefer extends StatelessWidget {
               left: 15,
               bottom: 25,
               child: SizedBox(
-                // color: Colors.yellow,
                 width: 257,
                 height: 18,
                 child: Row(
@@ -63,15 +61,13 @@ class EarnAndRefer extends StatelessWidget {
               right: 30,
               bottom: 10,
               child: SizedBox(
-                // color: Colors.pink,
                 width: 85,
                 height: 82,
-                child: SvgPicture.asset(AppAssets.giftIcon),  
+                child: SvgPicture.asset(AppAssets.giftIcon),
               ),
             ),
           ],
         ),
-        // child: Container(color: AppColors.accent,),
       ),
     );
   }

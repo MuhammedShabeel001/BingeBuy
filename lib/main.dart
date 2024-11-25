@@ -1,6 +1,6 @@
 import 'package:bingebuy/providers/notification_provider.dart';
 import 'package:bingebuy/utils/app_routes.dart';
-import 'package:bingebuy/utils/route_manager.dart';
+import 'package:bingebuy/utils/app_route_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -9,10 +9,11 @@ void main() async {
   runApp(
     MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (context) => NotificationProvider()..fetchNotifications(),)
+        ChangeNotifierProvider(
+          create: (context) => NotificationProvider()..fetchNotifications(),
+        )
       ],
-      child:
-       const MyApp(),
+      child: const MyApp(),
     ),
   );
 }
@@ -24,9 +25,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Binge Buy',
-      theme: ThemeData(
-        fontFamily: 'Quicksand'
-      ),
+      theme: ThemeData(fontFamily: 'Quicksand'),
       themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
       initialRoute: AppRoutes.home,

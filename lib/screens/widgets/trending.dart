@@ -1,5 +1,5 @@
 import 'package:bingebuy/screens/widgets/trending_item.dart';
-import 'package:bingebuy/utils/app_colors.dart';
+import 'package:bingebuy/utils/app_text_style.dart';
 import 'package:bingebuy/utils/app_texts.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -12,7 +12,6 @@ class Trending extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      // color: Colors.orangeAccent,
       height: 240,
       child: Column(
         children: [
@@ -25,15 +24,11 @@ class Trending extends StatelessWidget {
                   children: [
                     Text(
                       AppTexts.trending,
-                      style: const TextStyle(
-                          fontWeight: FontWeight.w700, fontSize: 28),
+                      style: AppTextStyle.title,
                     ),
                     Text(
                       AppTexts.seeAll,
-                      style: const TextStyle(
-                          fontWeight: FontWeight.w700,
-                          fontSize: 18,
-                          color: AppColors.accent),
+                      style: AppTextStyle.seeAll,
                     ),
                   ],
                 ),

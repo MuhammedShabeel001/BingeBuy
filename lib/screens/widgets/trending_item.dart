@@ -9,7 +9,6 @@ class TrendingItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SizedBox(
-      // color: Colors.yellow,
       width: 300,
       child: Column(
         children: [
